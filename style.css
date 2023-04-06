@@ -1,46 +1,69 @@
- @import url(https://fonts.googleapis.com/css?family=Poppins:900&display=swap);
- 
-.box
-{
-  background-color: rgba(255, 255, 255, 0.3);
- border-radius: 10px; 
- font-family:"Poppins",sans-serif;
- text-align: center;  
- line-height: 1;  
- -webkit-backdrop-filter: blur(10000px); 
- backdrop-filter: blur(10000px); max-width: 90%; 
- max-height: 50%; 
- padding: 25px 10px; 
- align-items: center;
- justify-content: center;
-height: 100%;
-width: 100%;
+@import url(https://fonts.googleapis.com/css?family=Poppins:900&display=swap);
 
-font-size: 1em;
-background: url("https://colorswall.com/images/palettes/bitcoin-logo-color-57-colorswall.png"); 
- -webkit-text-fill-color: transparent; 
-   -webkit-background-clip:text;
- }
+.box{
+    margin: 0 auto;
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    line-height: 1;
+    -webkit-backdrop-filter: blur(1000px);
+    backdrop-filter: blur(1000px);
+    max-width: 90%;
+    max-height: 50%;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    background: white; 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
-html, body {
-  height: 100%;
-  width: 100%;
- }
- 
- body {  
- background: url('https://wallpaperaccess.com/full/835574.jpg');
-background-size: cover; background-position: center; 
- background-repeat: no-repeat; 
- } 
- 
-.field,.valen,.foot
-{
- font-family:"Poppins",sans-serif;
- text-align: center;
- }
+html,body{
+    height: 100%;
+    width: 100%;
+}
 
+body{
+    background: url("https://www.bypeople.com/wp-content/uploads/2014/05/svg-image-as-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.field, .valen, .foot{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
 .field{
-  background: rgba(255, 255, 255,0.3);
-  border-radius: 10px;
-  border-color: transparent;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.mini-box {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(1000px);
+    backdrop-filter: blur(1000px);
+    max-width: 50%;
+    max-height: 50%;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+    margin: 0 auto;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
 }
