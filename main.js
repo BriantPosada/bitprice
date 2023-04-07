@@ -1,6 +1,7 @@
 const apiButton = document.getElementById('apiButton');
 const apiData = document.getElementById('apiData');
 
+
 const sats = document.getElementById('sats');
 const texto = document.getElementById('texto');
 
@@ -25,7 +26,22 @@ const callApi = () =>{
         fetch('https://api.yadio.io/convert/1/EUR/BTC').then(res => res.json())
         .then(data => {
             euvalor.innerText =`Buy ${JSON.parse(data.result)}`
+        })
+            //Mexican peso
+         mxData.innerText = `= $ ${JSON.stringify(data.BTC.MXN)}`
+         mxsats.innerText = `Buy $ ${JSON.parse(data.BTC.MXN/1000000000).toFixed(6)}`
 
+         fetch('https://api.yadio.io/convert/20/MXN/BTC').then(res => res.json())
+        .then(data => {
+            mxvalor.innerText =`Buy ${JSON.parse(data.result)}`
+         })
+            //El Salvador
+            svData.innerText = `= $ ${JSON.stringify(data.BTC.USD)}`
+            svsats.innerText = `Buy $ ${JSON.parse(data.BTC.USD/100000000).toFixed(6)}`
+
+           fetch('https://api.yadio.io/convert/1/USD/BTC').then(res => res.json())
+              .then(data => {
+            svvalor.innerText =`Buy ${JSON.parse(data.result)}`
     })
     
  /*
